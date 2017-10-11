@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.com.rep.WorkoutPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/AddWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Reps"
+            android:text="Add Workout" />
+
+        <Button
+            android:id="@+id/workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="See Workouts" />
+
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Exercise"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Date:" />
+
+        <TextView
+            android:id="@+id/exercisetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/weighttext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/datetext"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Exercise:" />
+
+        <TextView
+            android:id="@+id/weighttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/settext"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/Exercise"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Weight:" />
+
+        <TextView
+            android:id="@+id/settext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Reps"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Weight"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Sets:" />
+
+        <TextView
+            android:id="@+id/reptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/AddWorkout"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/settext"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Reps:" />
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/datetext"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/Exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Date"
+            android:layout_toRightOf="@+id/exercisetext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Exercise"
+            android:layout_toRightOf="@+id/weighttext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Weight"
+            android:layout_toEndOf="@+id/reptext"
+            android:layout_toRightOf="@+id/reptext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Sets"
+            android:layout_toEndOf="@+id/reptext"
+            android:layout_toRightOf="@+id/reptext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
