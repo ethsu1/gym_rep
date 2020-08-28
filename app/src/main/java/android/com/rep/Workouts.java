@@ -72,7 +72,6 @@ public class Workouts {
     }
     public void setProjMax(int max) {
         this.projMax = (int)((max)/(1.0278-(.0278*this.getReps())));
-        //Log.i("bitchass", Integer.toString(this.projMax));
     }
     public String toString(){
         String date = "Date: " + this.getDate();
